@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@media (width < 400px) {
+    html{
+        font-size: 14px;
+    }
+}

@@ -3,9 +3,11 @@ import Footer from './Footer.jsx'
 import { Outlet } from 'react-router-dom'
 const Layout = ()=>{
     return(
-        <div>
+        <div className="bg-black font-sans tracking-wider">
             <Header />
-            <Outlet />
+            <div className='p-20 pt-30'>
+                <Outlet />
+            </div>
             <Footer />
         </div>
     )

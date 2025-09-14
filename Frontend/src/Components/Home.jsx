@@ -1,7 +1,11 @@
+import Location from "./Location";
+import SearchBus from "./SearchBus";
+
 const Home = ()=>{
     return(
-        <div>
-
+        <div className="min-w-full flex justify-between">
+            <SearchBus />
+            <Location />
         </div>
     )
 }
