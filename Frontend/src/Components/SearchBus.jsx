@@ -11,20 +11,20 @@ const SearchBus = ()=>{
         setto(a);
     }
     return (
-        <div className="mr-2 text-white text-right w-fit p-4 rounded-xl border border-white/20 bg-[#0e0e0e]">
+        <div className="text-white text-right p-4 rounded-xl border border-white/20 bg-[#0e0e0e]">
             <div className="text-left"><p className="p-2 font-medium">Plan a Route</p></div>
             <form className="flex items-center">
                 <input 
                     type="text"
                     value={from}
-                    className="text-sm border border-white/20 rounded-xl h-10 w-52 m-2 p-2 bg-[#080808] placeholder:text-white/30 focus:outline-none focus:border-white/50"
+                    className="flex-1 min-w-3 text-sm border border-white/20 rounded-xl h-10 m-2 p-2 bg-[#080808] placeholder:text-white/30 focus:outline-none focus:border-white/50"
                     placeholder="From (e.g., City Center)"
                     onChange={(e)=>{setfrom(e.target.value)}}/>
                 <button className="cursor-pointer" onClick={swap}><img src="/swap.avif" alt="swap" className="w-6 min-w-6"/></button>
                 <input 
                     type="text"
                     value={to}
-                    className="text-sm border border-white/20 rounded-xl h-10 w-52 m-2 p-2 bg-[#080808] placeholder:text-white/30 focus:outline-none focus:border-white/50"
+                    className="flex-1 min-w-3 text-sm border border-white/20 rounded-xl h-10 m-2 p-2 bg-[#080808] placeholder:text-white/30 focus:outline-none focus:border-white/50"
                     placeholder="To(e.g., Tech Park)"
                     onChange={(e)=>{setto(e.target.value)}}/>
             </form>

@@ -5,7 +5,7 @@ const Layout = ()=>{
     return(
         <div className="bg-black font-sans tracking-wider">
             <Header />
-            <div className='p-20 pt-30'>
+            <div className='px-5 sm:px-10 py-30'>
                 <Outlet />
             </div>
             <Footer />
