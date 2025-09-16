@@ -1,5 +1,10 @@
 @import "tailwindcss";
-@media (width < 400px) {
+@media (width < 910px) {
+    html{
+        font-size: 14px;
+    }
+}
+@media (width < 450px) {
     html{
         font-size: 12px;
     }
